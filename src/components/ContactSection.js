@@ -36,23 +36,40 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulación de envío
-    setTimeout(() => {
+    setSubmitStatus(null); // Reset previous status
+
+    try {
+      const response = await fetch('https://hook.eu2.make.com/wucgkxfx2s2edfi4wauy85nb6zs3bo9a', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        console.error('Error al enviar el formulario:', response.status);
+        setSubmitStatus('error'); // Puedes añadir un estado de error para mostrar un mensaje al usuario
+      }
+    } catch (error) {
+      console.error('Error de red:', error);
+      setSubmitStatus('error'); // También en caso de error de red
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-    }, 1500);
+    }
   };
 
   return (
     <section id="contact" className="py-20 bg-gray-800 text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         {[...Array(20)].map((_, i) => (
-          <div 
+          <div
             key={i}
             className="absolute font-mono text-xs text-blue-400"
             style={{
@@ -80,7 +97,7 @@ const ContactSection = () => {
           <div className="lg:w-1/2 scroll-animate">
             <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700">
               {codeLines.map((line, index) => (
-                <div 
+                <div
                   key={index}
                   className={`font-mono mb-2 ${index === 0 ? 'text-blue-400' : 'text-gray-400'} ${index === 1 || index === 5 ? 'mt-4' : ''}`}
                 >
