@@ -5,18 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Elian Palma</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div id="root"></div>
-<button id="botonArriba" title="Volver arriba">
-  <svg viewBox="0 0 24 24" fill="currentColor">
-    <path fill-rule="evenodd" d="M11.47 3.72a.75.75 0 011.06 0l5.25 5.25a.75.75 0 11-1.06 1.06L12 5.31l-4.72 4.72a.75.75 0 11-1.06-1.06l5.25-5.25zM12 7a.75.75 0 01.75.75v10.5a.75.75 0 01-1.5 0V7.75A.75.75 0 0112 7z" clip-rule="evenodd" />
-  </svg>
-</button>
+    <button id="botonArriba" title="Volver arriba">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.47 3.72a.75.75 0 011.06 0l5.25 5.25a.75.75 0 11-1.06 1.06L12 5.31l-4.72 4.72a.75.75 0 11-1.06-1.06l5.25-5.25zM12 7a.75.75 0 01.75.75v10.5a.75.75 0 01-1.5 0V7.75A.75.75 0 0112 7z" clip-rule="evenodd" />
+      </svg>
+    </button>
+    <div class="whatsapp-bubble">
+        <a href="https://api.whatsapp.com/send?phone=5804128231012" target="_blank" rel="noopener noreferrer">
+            
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
   </body>
 </html>
 
 <style>
+
+          .whatsapp-bubble {
+              position: fixed;
+              left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+              bottom: 100px; /* Ajusta la distancia desde el borde inferior */
+              background-color: #387df485; /* Color verde de WhatsApp */
+              color: white;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px;
+              cursor: pointer;
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+              z-index: 1000; /* Asegura que esté por encima de otros elementos */
+          }
+
+          .whatsapp-bubble:hover {
+              opacity: 0.8;
+          }
+
+          .whatsapp-bubble a {
+              color: white;
+              text-decoration: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+          }
+
+          /* Opcional: Icono de WhatsApp (puedes usar un emoji o una fuente de iconos) */
+          .whatsapp-icon {
+              font-size: 30px;
+          } 
 
 #botonArriba {
   display: none; /* Oculto inicialmente */
