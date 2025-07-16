@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react'; // Importa useState, useEffect, y useRef
 
 const skills = [
   { name: 'WordPress', level: 100 },
@@ -39,10 +39,53 @@ const skills = [
 ];
 
 const SkillsSection = () => {
+  // Estado para controlar la animación de entrada de la sección y las tarjetas
+  const [animateIn, setAnimateIn] = useState(false);
+
+  // Refs para observar los elementos principales
+  const headerRef = useRef(null); // Para el título y la descripción
+  const skillsGridRef = useRef(null); // Para el contenedor de la cuadrícula de habilidades
+
+  // useEffect para el IntersectionObserver
+  useEffect(() => {
+    const observerOptions = {
+      root: null, // El viewport es el elemento raíz
+      rootMargin: '0px',
+      threshold: 0.1 // Activar cuando el 10% del elemento sea visible
+    };
+
+    // Crear un observador para el encabezado de la sección o la cuadrícula
+    const mainObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setAnimateIn(true); // Activa la animación general de la sección y las tarjetas
+          mainObserver.unobserve(entry.target); // Dejar de observar una vez que se hizo visible
+        }
+      });
+    }, observerOptions);
+
+    // Adjuntar observador a los elementos. Podemos observar el encabezado o la cuadrícula,
+    // dependiendo de qué elemento definirá el inicio de la animación de la sección.
+    // Observar el header para que la animación empiece cuando se vea el título.
+    if (headerRef.current) mainObserver.observe(headerRef.current);
+    // Si quieres que empiece cuando la cuadrícula es visible, puedes observar skillsGridRef.current
+
+    // Función de limpieza para desconectar el observador
+    return () => {
+      if (headerRef.current) mainObserver.unobserve(headerRef.current);
+      mainObserver.disconnect();
+    };
+  }, []); // Se ejecuta solo una vez al montar el componente
+
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        {/* Encabezado de la sección de habilidades */}
+        <div 
+          ref={headerRef} // Adjunta la ref
+          className={`text-center mb-16 transition-all duration-700 ease-out 
+                      ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Mis <span className="text-blue-600">Habilidades</span>
           </h2>
@@ -51,17 +94,36 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {/* Contenedor de la cuadrícula de habilidades */}
+        <div 
+          ref={skillsGridRef} // Adjunta la ref, aunque el observador principal ya está en headerRef
+          className={`grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto
+                      transition-all duration-700 ease-out delay-200 
+                      ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
           {skills.map((skill, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-4 hover:shadow-md transition-shadow">
+            <div 
+              key={index} 
+              className="bg-gray-50 rounded-xl p-4 hover:shadow-md transition-shadow"
+              // Clases de animación para cada tarjeta de habilidad
+              // Usamos `transform` para el efecto de "flip" y `opacity` para el "fade-in"
+              style={{
+                transform: animateIn ? 'rotateX(0deg) translateY(0px)' : 'rotateX(-90deg) translateY(50px)',
+                opacity: animateIn ? 1 : 0,
+                transition: 'transform 0.6s ease-out, opacity 0.6s ease-out', // Transición para ambas propiedades
+                transitionDelay: animateIn ? `${index * 80}ms` : '0ms', // Retraso escalonado
+                transformOrigin: 'top center' // Asegura que el "flip" ocurra desde arriba
+              }}
+            >
               <div className="flex justify-between mb-2">
                 <span className="font-medium text-gray-800">{skill.name}</span>
                 <span className="text-blue-600 font-medium">{skill.level}%</span>
               </div>
+              {/* Aquí mantenemos la barra de progreso estática, sin animación por scroll */}
               <div className="relative h-2.5 bg-gray-200 rounded-full overflow-hidden">
                 <div 
-                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-1000"
-                  style={{ width: `${skill.level}%` }}
+                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-blue-600"
+                  style={{ width: `${skill.level}%` }} // La barra ya está en su lugar
                 ></div>
               </div>
             </div>
@@ -73,5 +135,3 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
-
-// DONE

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React, { useState, useEffect, useRef } from 'react'; // Asegúrate de importar useRef
+// import useScrollAnimation from '../hooks/useScrollAnimation'; // No lo usaremos directamente aquí para este efecto
 
 const ContactSection = () => {
-  useScrollAnimation();
+  // useScrollAnimation(); // Deshabilitamos este hook si vamos a implementar la lógica de scroll aquí
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,15 +12,26 @@ const ContactSection = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
   const [activeField, setActiveField] = useState(null);
 
+  // Estados para controlar la visibilidad de los elementos para la animación
+  const [headerVisible, setHeaderVisible] = useState(false);
+  const [codeBlockVisible, setCodeBlockVisible] = useState(false);
+  const [formVisible, setFormVisible] = useState(false);
+
+  // Refs para observar los elementos
+  const headerRef = useRef(null);
+  const codeBlockRef = useRef(null);
+  const formRef = useRef(null);
+
+
   const codeLines = [
     "// Ready to connect?",
     "const contactForm = {",
-    "  name: '',",
-    "  email: '',",
-    "  message: ''",
+    "  name: '',",
+    "  email: '',",
+    "  message: ''",
     "};",
     "function handleSubmit() {",
-    "  // Send message logic here",
+    "  // Send message logic here",
     "}"
   ];
 
@@ -30,6 +41,57 @@ const ContactSection = () => {
       return () => clearTimeout(timer);
     }
   }, [submitStatus]);
+
+  // Nuevo useEffect para los IntersectionObservers
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1 // Activar cuando el 10% del elemento sea visible
+    };
+
+    // Observador para el encabezado
+    const headerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setHeaderVisible(true);
+          headerObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observador para el bloque de código
+    const codeBlockObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setCodeBlockVisible(true);
+          codeBlockObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observador para el formulario
+    const formObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setFormVisible(true);
+          formObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Adjuntar observadores a los elementos
+    if (headerRef.current) headerObserver.observe(headerRef.current);
+    if (codeBlockRef.current) codeBlockObserver.observe(codeBlockRef.current);
+    if (formRef.current) formObserver.observe(formRef.current);
+
+    // Función de limpieza para desconectar los observadores
+    return () => {
+      if (headerRef.current) headerObserver.unobserve(headerRef.current);
+      if (codeBlockRef.current) codeBlockObserver.unobserve(codeBlockRef.current);
+      if (formRef.current) formObserver.unobserve(formRef.current);
+    };
+  }, []); // Se ejecuta solo una vez al montar el componente
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -55,11 +117,11 @@ const ContactSection = () => {
         setFormData({ name: '', email: '', message: '' });
       } else {
         console.error('Error al enviar el formulario:', response.status);
-        setSubmitStatus('error'); // Puedes añadir un estado de error para mostrar un mensaje al usuario
+        setSubmitStatus('error');
       }
     } catch (error) {
       console.error('Error de red:', error);
-      setSubmitStatus('error'); // También en caso de error de red
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
@@ -84,7 +146,12 @@ const ContactSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 scroll-animate">
+        {/* Encabezado de la sección */}
+        <div 
+          ref={headerRef} // Adjunta la ref
+          className={`text-center mb-16 transition-all duration-700 ease-out 
+                      ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
           <h2 className="text-4xl font-bold mb-4">
             <span className="text-blue-400">Contacto</span>
           </h2>
@@ -94,7 +161,12 @@ const ContactSection = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="lg:w-1/2 scroll-animate">
+          {/* Bloque de código */}
+          <div 
+            ref={codeBlockRef} // Adjunta la ref
+            className={`lg:w-1/2 transition-all duration-700 ease-out delay-200 
+                        ${codeBlockVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          >
             <div className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700">
               {codeLines.map((line, index) => (
                 <div
@@ -107,7 +179,12 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full scroll-animate">
+          {/* Formulario de contacto */}
+          <div 
+            ref={formRef} // Adjunta la ref
+            className={`lg:w-1/2 w-full transition-all duration-700 ease-out delay-300 
+                        ${formVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          >
             {submitStatus === 'success' ? (
               <div className="bg-green-900/50 border border-green-400 text-green-100 p-8 rounded-xl text-center">
                 <h3 className="text-2xl font-bold mb-2">¡Mensaje enviado!</h3>
