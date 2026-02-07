@@ -2,23 +2,23 @@ import p1 from '../components/img/cuid.png';
 import p2 from '../components/img/tech.png';
 import p3 from '../components/img/rafaella.jpg';
 import p4 from '../components/img/ternary.png';
-import p5 from '../components/img/unibe.jpg';
+import p5 from '../components/img/arandu.png';
 import p6 from '../components/img/curated.png';
-import p7 from '../components/img/market.png';
+import p7 from '../components/img/bodegaseptima.png';
 import p8 from '../components/img/yanguela.png';
 import p9 from '../components/img/carmen.png';
 import p10 from '../components/img/life.jpg';
-import p11 from '../components/img/casaaliso.jpg';
+import p11 from '../components/img/unibe.jpg';
 import p12 from '../components/img/fossil.png';
 import p13 from '../components/img/cocherenting.png';
 import p14 from '../components/img/argenprom.png';
 import p15 from '../components/img/tequiero.png';
 import p16 from '../components/img/angela.png';
-import p17 from '../components/img/education.png';
-import p18 from '../components/img/business.png';
+import p17 from '../components/img/televam.png';
+import p18 from '../components/img/lamason.png';
 import p19 from '../components/img/forza.png';
 import p20 from '../components/img/smc.png';
-import p21 from '../components/img/vamos.png';
+import p21 from '../components/img/bellini.png';
 import p22 from '../components/img/queen.png';
 import p23 from '../components/img/wine.png';
 import p24 from '../components/img/jesus.png';
@@ -33,6 +33,13 @@ import p32 from '../components/img/mused.png';
 import p33 from '../components/img/option.png';
 import p34 from '../components/img/rentgomotors.jpg';
 import p35 from '../components/img/maria.jpg';
+import p36 from '../components/img/casaaliso.jpg';
+import p37 from '../components/img/market.png';
+import p38 from '../components/img/centroestant.png';
+import p39 from '../components/img/marketbrand.png';
+import p40 from '../components/img/printalot.png';
+import p41 from '../components/img/piazza.png';
+
 
 
 const projects = [
@@ -74,13 +81,13 @@ const projects = [
   },   
         {
     id: 5,
-    title: "UNIBE Ecuador",
+    title: "Arandu",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p5, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://unibe.edu.ec/", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress", "Flatsome","Woocommerce", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://arandu.com.ar/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },
+  }, 
   {
     id: 6,
     title: "Curated",
@@ -92,13 +99,13 @@ const projects = [
   },
 
     {  id: 7,
-     title: "Market",
+     title: "Bodega Septima",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p7, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Shopify","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","Liquid","Ruby","Tailwind","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://merkimarket.com/", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://tienda.bodegaseptima.com/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
+  },    
   {
     id: 8,
     title: "Farmacia Yanguela",
@@ -127,15 +134,15 @@ const projects = [
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   },
  
-        {
+  {
     id: 11,
-    title: "Casa Aliso",
+    title: "UNIBE Ecuador",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p11, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","Slider Revolution","WooCommerce","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.casaaliso.com/", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://unibe.edu.ec/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },
+  }, 
 
      {
     id: 12,
@@ -181,19 +188,19 @@ const projects = [
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   },
     {  id: 17,
-    title: "Asset Entities Education",
+    title: "Televam",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p17, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","jQuery","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://assetentities.education/", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://www.tevelam.com.ar/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   },
     {  id: 18,
-    title: "Business Ware",
+    title: "Lamason",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p18, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","jQuery","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://businesswarecorp.com", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://lamasonagency.com/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   }, 
     {  id: 19,
@@ -213,11 +220,11 @@ const projects = [
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   },                      
     {  id: 21,
-     title: "Vamos",
+     title: "Bellini",
     //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
     image: p21, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Divi","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://landings.vamos.es/", // Reemplaza con la URL de demostración (si la hay)
+    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://www.bellinihnos.com.ar/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   }, 
     {  id: 22,
@@ -338,7 +345,58 @@ const projects = [
     tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","WooCommerce","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
     demoUrl: "https://mariafernandacastro.com", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
+  },
+
+  {
+    id: 36,
+    title: "Casa Aliso",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p36, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","Slider Revolution","WooCommerce","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://www.casaaliso.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 37,
+     title: "Market",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p37, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Shopify","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","Liquid","Ruby","Tailwind","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://merkimarket.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 38,
+     title: "Centro Estant",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p38, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://centroestant.com.ar/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 39,
+     title: "Marketbrand",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p39, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://productospromocionales.com.ar/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 40,
+     title: "Printalot",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p40, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://printalot.com.ar/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 41,
+     title: "Piazza",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://www.piazzagriferia.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },         
+                             
           
 ];
 
