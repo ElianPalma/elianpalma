@@ -28,3 +28,17 @@ const App = () => {
 export default App;
 
 // DONE
+
+const handleProjectClick = (projectName) => {
+  // Esta es la forma técnica de enviar datos a GTM desde React
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'project_view', // Nombre del evento
+    project_name: projectName,
+    category: 'portfolio_interaction'
+  });
+  console.log(`Evento de ${projectName} enviado al DataLayer`);
+};
+
+// En tu JSX del botón o enlace:
+// <button onClick={() => handleProjectClick('Mi Proyecto React')}>Ver Proyecto</button>
