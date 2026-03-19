@@ -39,6 +39,11 @@ import p38 from '../components/img/centroestant.png';
 import p39 from '../components/img/marketbrand.png';
 import p40 from '../components/img/printalot.png';
 import p41 from '../components/img/piazza.png';
+import p42 from '../components/img/diosmio.png';
+import p43 from '../components/img/futura.png';
+import p44 from '../components/img/rochambo.png';
+import p45 from '../components/img/virgi.png';
+import p46 from '../components/img/virgi.png';
 
 
 
@@ -396,8 +401,47 @@ const projects = [
     demoUrl: "https://www.piazzagriferia.com/", // Reemplaza con la URL de demostración (si la hay)
     //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
   },         
-                             
-          
+     {  id: 42,
+     title: "Dios Mio Coffee",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Shopify","Liquid","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://diosmiocoffee.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },                             
+     {  id: 43,
+     title: "Futura",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Elementot","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://futura1.net/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 44,
+     title: "Roshambo",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Shopify","Liquid","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://roshambo.com.ar/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 45,
+     title: "Virginity",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["HTML5","CSS","Javascript","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://leadersexperiences.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },
+     {  id: 46,
+     title: "Latir",
+    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
+    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
+    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
+    demoUrl: "https://latir2026.boomgaludigital.com/", // Reemplaza con la URL de demostración (si la hay)
+    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  },  
+  
 ];
 
 export default projects;
