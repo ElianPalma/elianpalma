@@ -45,423 +45,329 @@ import p44 from '../components/img/rochambo.png';
 import p45 from '../components/img/virgi.png';
 import p46 from '../components/img/latir.png';
 
-
-
 const projects = [
   {
     id: 1,
     title: "Cuid",
-    //description: "Desarrollo web front-end con Tailwind UI, Liquid, Javascript, React HTML y CSS, implementando formularios inteligentes y automatizaciones complejas con Make, Klaviyo y Stripe, optimizado para SEO.",
-    image: p1, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Shopify", "Liquid", "React JS","Make", "Javascript", "Airtable","HTML","CSS","PHP","SEO","Stripe","Klaviyo"], // Agrega las etiquetas relevantes
-    demoUrl: "https://cuid.mx/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto1" // Reemplaza con la URL del código (si es público)
+    image: p1,
+    tags: ["Shopify", "Liquid", "React JS", "Make", "Javascript", "Airtable", "HTML", "CSS", "PHP", "SEO", "Stripe", "Klaviyo"],
+    demoUrl: "https://cuid.mx/",
   },
-
-     {  id: 2,
-     title: "Cuid Tech",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p2, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","Make","Airtable","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://cuid.tech/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
-    {
-    id: 3,
-    title: "Rafaella Proaño",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p3, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","WooCommerce","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://rafaellaproano.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 2,
+    title: "Cuid Tech",
+    image: p2,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO", "Make", "Airtable"],
+    demoUrl: "https://cuid.tech/",
   },
-
-     {  id: 4,
-     title: "Ternary",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p4, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.ternarydev.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
-        {
+  {
+    id: 12,
+    title: "Fossil Ecuador",
+    image: p12,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "WooCommerce"],
+    demoUrl: "https://www.fossil.com.ec/",
+  },
+  {
+    id: 4,
+    title: "Ternary",
+    image: p4,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.ternarydev.com/",
+  },
+  {
     id: 5,
     title: "Arandu",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p5, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Flatsome","Woocommerce", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://arandu.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
+    image: p5,
+    tags: ["Wordpress", "Flatsome", "Woocommerce", "CSS", "Javascript", "HTML", "PHP"],
+    demoUrl: "https://arandu.com.ar/",
+  },
+  {
+    id: 3,
+    title: "Rafaella Proaño",
+    image: p3,
+    tags: ["Wordpress", "Divi", "CSS", "Javascript", "HTML", "PHP", "WooCommerce"],
+    demoUrl: "https://rafaellaproano.com/",
+  },
   {
     id: 6,
     title: "Curated",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p6, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","PHP","jQuery","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.wearecurated.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p6,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "PHP", "jQuery"],
+    demoUrl: "https://www.wearecurated.com/",
   },
-
-    {  id: 7,
-     title: "Bodega Septima",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p7, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://tienda.bodegaseptima.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },    
+  {
+    id: 7,
+    title: "Bodega Septima",
+    image: p7,
+    tags: ["Wordpress", "Flatsome", "Woocommerce", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://tienda.bodegaseptima.com/",
+  },
   {
     id: 8,
     title: "Farmacia Yanguela",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p8, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Prestashop", "CSS","Javascript","HTML","PHP","jQuery","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://farmaciayanguela.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p8,
+    tags: ["Prestashop", "CSS", "Javascript", "HTML", "PHP", "jQuery", "Google Analytics"],
+    demoUrl: "https://farmaciayanguela.com/",
   },
-    {
+  {
     id: 9,
     title: "Doña Carmen",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p9, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Prestashop", "CSS","Javascript","HTML","PHP","Vue JS","Google Tag Manager","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://donacarmen.com/es/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-      {
+    image: p9,
+    tags: ["Prestashop", "CSS", "Javascript", "HTML", "PHP", "Vue JS", "Google Tag Manager"],
+    demoUrl: "https://donacarmen.com/es/",
+  },
+  {
     id: 10,
     title: "Life",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p10, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://life-urns.com", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p10,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP"],
+    demoUrl: "https://life-urns.com",
   },
- 
   {
     id: 11,
     title: "UNIBE Ecuador",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p11, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://unibe.edu.ec/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-
-     {
-    id: 12,
-    title: "Fossil Ecuador",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p12, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","WooCommerce","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.fossil.com.ec/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },  
-            {
+    image: p11,
+    tags: ["Wordpress", "Divi", "CSS", "Javascript", "HTML", "PHP"],
+    demoUrl: "https://unibe.edu.ec/",
+  },
+  {
     id: 13,
     title: "Cocherenting",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p13, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://cocherenting.es/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-              {
+    image: p13,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager"],
+    demoUrl: "https://cocherenting.es/",
+  },
+  {
     id: 14,
     title: "Argenprom",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p14, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Prestashop","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.argenprom.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p14,
+    tags: ["Prestashop", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager"],
+    demoUrl: "https://www.argenprom.com.ar/",
   },
-    {  id: 15,
+  {
+    id: 15,
     title: "Te Quiero Verde",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p15, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","WooCommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://tequieroverde.com.ec", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p15,
+    tags: ["Wordpress", "WooCommerce", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://tequieroverde.com.ec",
   },
-    {  id: 16,
+  {
+    id: 16,
     title: "Angeles Marquez",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p16, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","jQuery","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://angelesmarquez.es/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p16,
+    tags: ["Wordpress", "jQuery", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://angelesmarquez.es/",
   },
-    {  id: 17,
+  {
+    id: 17,
     title: "Televam",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p17, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.tevelam.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p17,
+    tags: ["Wordpress", "Flatsome", "Woocommerce", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://www.tevelam.com.ar/",
   },
-    {  id: 18,
+  {
+    id: 18,
     title: "Lamason",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p18, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://lamasonagency.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-    {  id: 19,
-     title: "Forza",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p19, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","jQuery","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://sforzamed.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p18,
+    tags: ["Wordpress", "Flatsome", "Woocommerce", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://lamasonagency.com/",
   },
-    {  id: 20,
-     title: "SMC",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p20, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","jQuery","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.smc-construcciones.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },                      
-    {  id: 21,
-     title: "Bellini",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p21, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Flatsome","Woocommerce","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.bellinihnos.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-    {  id: 22,
-     title: "Queen Tribe",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p22, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Divi","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.queentribeventures.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
-   {  id: 23,
-     title: "New Wine",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p23, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","PHP","Google Analytics","Google Tag Manager","Yoast SEO","Vue JS","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.newwinelive.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 19,
+    title: "Forza",
+    image: p19,
+    tags: ["Wordpress", "jQuery", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://sforzamed.com/",
   },
-
-    {  id: 24,
-     title: "El Rey Jesus",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p24, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://elreyjesus.org/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },                            
-    {  id: 25,
-     title: "Zul",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p25, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.zul.life/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 20,
+    title: "SMC",
+    image: p20,
+    tags: ["Wordpress", "jQuery", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://www.smc-construcciones.com/",
   },
-    {  id: 26,
-     title: "El establo de alejo",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p26, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://elestablodealejo.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-    {  id: 27,
-     title: "Aldara",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p27, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://aldarablanco.es/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-    {  id: 28,
-     title: "Consulting",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p28, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://connectconsulting.ec/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-    {  id: 29,
-     title: "Equira",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p29, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","MysQl","Google Analytics","Google Tag Manager","Yoast SEO","Slider Revolution","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://equira.com.ec/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-      {  id: 30,
-     title: "Flavvrr",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p30, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.flavvrr.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  }, 
-
-        {
+  {
+    id: 21,
+    title: "Bellini",
+    image: p21,
+    tags: ["Wordpress", "Flatsome", "Woocommerce", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://www.bellinihnos.com.ar/",
+  },
+  {
+    id: 22,
+    title: "Queen Tribe",
+    image: p22,
+    tags: ["Wordpress", "Divi", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO"],
+    demoUrl: "https://www.queentribeventures.com/",
+  },
+  {
+    id: 23,
+    title: "New Wine",
+    image: p23,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Vue JS"],
+    demoUrl: "https://www.newwinelive.com/",
+  },
+  {
+    id: 24,
+    title: "El Rey Jesus",
+    image: p24,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://elreyjesus.org/",
+  },
+  {
+    id: 25,
+    title: "Zul",
+    image: p25,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://www.zul.life/",
+  },
+  {
+    id: 26,
+    title: "El establo de alejo",
+    image: p26,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://elestablodealejo.com/",
+  },
+  {
+    id: 27,
+    title: "Aldara",
+    image: p27,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://aldarablanco.es/",
+  },
+  {
+    id: 28,
+    title: "Consulting",
+    image: p28,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://connectconsulting.ec/",
+  },
+  {
+    id: 29,
+    title: "Equira",
+    image: p29,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "MysQl", "Google Analytics", "Google Tag Manager", "Yoast SEO", "Slider Revolution"],
+    demoUrl: "https://equira.com.ec/",
+  },
+  {
+    id: 30,
+    title: "Flavvrr",
+    image: p30,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.flavvrr.com/",
+  },
+  {
     id: 31,
     title: "Sofia Tamayo",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p31, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","Learndash","WooCommerce","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://sofiatamayo.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
-    {  id: 32,
-     title: "Mused",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p32, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.mused.design/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p31,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "Learndash", "WooCommerce"],
+    demoUrl: "https://sofiatamayo.com/",
   },
-     {  id: 33,
-     title: "Option",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p33, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Webflow","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.optionsswing.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 32,
+    title: "Mused",
+    image: p32,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.mused.design/",
   },
-
+  {
+    id: 33,
+    title: "Option",
+    image: p33,
+    tags: ["Webflow", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.optionsswing.com/",
+  },
   {
     id: 34,
     title: "Rentgomotors",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p34, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","WooCommerce","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.rentgomotors.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },   
-
+    image: p34,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "WooCommerce"],
+    demoUrl: "https://www.rentgomotors.com/",
+  },
   {
     id: 35,
     title: "Maria Fernanda",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p35, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Divi", "CSS","Javascript","HTML","PHP","WooCommerce","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://mariafernandacastro.com", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p35,
+    tags: ["Wordpress", "Divi", "CSS", "Javascript", "HTML", "PHP", "WooCommerce", "Google Analytics"],
+    demoUrl: "https://mariafernandacastro.com",
   },
-
   {
     id: 36,
     title: "Casa Aliso",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p36, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","Slider Revolution","WooCommerce","Google Analytics","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.casaaliso.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+    image: p36,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "PHP", "Slider Revolution", "WooCommerce", "Google Analytics"],
+    demoUrl: "https://www.casaaliso.com/",
   },
-     {  id: 37,
-     title: "Market",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p37, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Shopify","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","Liquid","Ruby","Tailwind","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://merkimarket.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 37,
+    title: "Market",
+    image: p37,
+    tags: ["Shopify", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO", "Liquid", "Ruby", "Tailwind"],
+    demoUrl: "https://merkimarket.com/",
   },
-     {  id: 38,
-     title: "Centro Estant",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p38, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://centroestant.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 38,
+    title: "Centro Estant",
+    image: p38,
+    tags: ["Wordpress", "Woocommerce", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://centroestant.com.ar/",
   },
-     {  id: 39,
-     title: "Marketbrand",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p39, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://productospromocionales.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 39,
+    title: "Marketbrand",
+    image: p39,
+    tags: ["Wordpress", "Woocommerce", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://productospromocionales.com.ar/",
   },
-     {  id: 40,
-     title: "Printalot",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p40, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://printalot.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 40,
+    title: "Printalot",
+    image: p40,
+    tags: ["Wordpress", "Woocommerce", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://printalot.com.ar/",
   },
-     {  id: 41,
-     title: "Piazza",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p41, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Woocommerce","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.piazzagriferia.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },         
-     {  id: 42,
-     title: "Dios Mio Coffee",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p42, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Shopify","Liquid","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://diosmiocoffee.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },                             
-     {  id: 43,
-     title: "Futura",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p43, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementot","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://futura1.net/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 41,
+    title: "Piazza",
+    image: p41,
+    tags: ["Wordpress", "Woocommerce", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.piazzagriferia.com/",
   },
-     {  id: 44,
-     title: "Roshambo",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p44, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Shopify","Liquid","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://roshambo.com.ar/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 42,
+    title: "Dios Mio Coffee",
+    image: p42,
+    tags: ["Shopify", "Liquid", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://diosmiocoffee.com/",
   },
-     {  id: 45,
-     title: "Virginity",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p45, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["HTML5","CSS","Javascript","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://leadersexperiences.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
+  {
+    id: 43,
+    title: "Futura",
+    image: p43,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://futura1.net/",
   },
-     {  id: 46,
-     title: "Latir",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p46, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress","Elementor","CSS","Javascript","HTML","Google Analytics","Google Tag Manager","SEO","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://latir2026.boomgaludigital.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },  
-  
+  {
+    id: 44,
+    title: "Roshambo",
+    image: p44,
+    tags: ["Shopify", "Liquid", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://roshambo.com.ar/",
+  },
+  {
+    id: 45,
+    title: "Virginity",
+    image: p45,
+    tags: ["HTML5", "CSS", "Javascript", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://leadersexperiences.com/",
+  },
+  {
+    id: 46,
+    title: "Latir",
+    image: p46,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://latir2026.boomgaludigital.com/",
+  },
 ];
 
 export default projects;
-
-{/* 
-  
-
-  
-
-  
-
-
-         {
-    id: 7,
-    title: "Rentgomotors",
-    //description: "Descripción detallada de tu segundo proyecto, resaltando sus aspectos más importantes, las funcionalidades implementadas y cualquier integración o automatización compleja que hayas realizado.",
-    image: p7, // Reemplaza con la ruta real de la imagen de tu proyecto
-    tags: ["Wordpress", "Elementor", "CSS","Javascript","HTML","PHP","WooCommerce","","","","","","","","","","","","","","","","","","","","","","","","","","","",], // Agrega las etiquetas relevantes
-    demoUrl: "https://www.rentgomotors.com/", // Reemplaza con la URL de demostración (si la hay)
-    //codeUrl: "https://github.com/tu-usuario/proyecto2" // Reemplaza con la URL del código (si es público)
-  },
-  
-  */}
