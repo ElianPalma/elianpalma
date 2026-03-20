@@ -43,7 +43,7 @@ import p42 from '../components/img/diosmio.png';
 import p43 from '../components/img/futura.png';
 import p44 from '../components/img/rochambo.png';
 import p45 from '../components/img/virgi.png';
-import p46 from '../components/img/virgi.png';
+import p46 from '../components/img/latir.png';
 
 
 
