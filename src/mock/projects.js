@@ -44,6 +44,9 @@ import p43 from '../components/img/futura.png';
 import p44 from '../components/img/rochambo.png';
 import p45 from '../components/img/virgi.png';
 import p46 from '../components/img/latir.png';
+import p47 from '../components/img/loulavie.png';
+import p48 from '../components/img/miami.png';
+import p49 from '../components/img/vizzio.png';
 
 const projects = [
   {
@@ -368,6 +371,24 @@ const projects = [
     tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
     demoUrl: "https://latir2026.boomgaludigital.com/",
   },
+    id: 47,
+    title: "Loulavie",
+    image: p47,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://www.loulavie.com/",
+  },
+    id: 48,
+    title: "Concours",
+    image: p48,
+    tags: ["Wordpress", "Elementor", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://miamiconcours.com/",
+  },
+    id: 49,
+    title: "Vizzio",
+    image: p49,
+    tags: ["Shopifys", "Liquid", "CSS", "Javascript", "HTML", "Google Analytics", "Google Tag Manager", "SEO"],
+    demoUrl: "https://vizzioeyewear.com/",
+  },  
 ];
 
 export default projects;
