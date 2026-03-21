@@ -48,7 +48,6 @@ import p47 from '../components/img/loulavie.png';
 import p48 from '../components/img/miami.png';
 import p49 from '../components/img/vizzio.png';
 
-
 const projects = [
   {
     id: 1,
