@@ -102,7 +102,7 @@ const PortfolioHeader = () => {
                 {/* Botón de Descarga (NUEVO) */}
                 <a 
                   href={pdfCV}
-                  download="Elian_Palma_CV_2026.pdf" // Nombre con el que se descargará
+                  download="Elian_CV_2026.pdf" // Nombre con el que se descargará
                   title="Descargar CV"
                   className="text-gray-400 hover:text-blue-400 transition-colors p-1 rounded"
                 >
