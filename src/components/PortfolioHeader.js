@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // Importamos el nuevo icono de descarga (ArrowDownTrayIcon)
 import { DocumentArrowDownIcon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/solid';
 // Importa el PDF directamente
-import pdfCV from './img/Elian Palma CV 2026.pdf';
+import pdfCV from './img/Elian CV 2026.pdf';
 
 const PortfolioHeader = () => {
   const [scrolled, setScrolled] = useState(false);
